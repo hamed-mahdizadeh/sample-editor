@@ -1,0 +1,12 @@
+<div class="editor-input-container">
+    <div class="panel-header">
+        <!-- <div *ngIf="doc && doc.title">
+            File title: {{doc.title}}
+        </div> -->
+    </div>
+    <div class="backgroundArea" #backgroundArea>
+        <div class="highlights" #highlights>
+        </div>
+    </div>
+    <textarea (input)="onInput($event.target.value)" (scroll)="onScroll($event)" #textArea></textarea>
+</div>

@@ -1,0 +1,39 @@
+<div class="landing">
+    <div class="new-doc">
+        <div class="panel-heading">
+            Create New Offline Document
+        </div>
+        <div class="panel-body">
+            <div class="doc-file">
+                <div class="doc-add-icon fas fa-plus-square"(click)="onSaveOffline($event)" title="Create Offline File"></div>
+                <div class="doc-icon fas fa-file"></div>
+            </div>
+           
+            <div class="doc-name">
+                <input placeholder="Please Enter Title of the New Document Here" [(ngModel)]="newFileTitle">
+            </div>
+        </div>
+    </div>
+    <div class="doc-index">
+        <div class="panel-heading">
+            Your Offline Files
+        </div>
+        <div class="doc-card-container">
+            <div class="doc-card" *ngFor="let doc of userDocIndex.docIndex">
+                <div class="doc-file">
+                    <div class="doc-remove-icon fas fa-trash-alt" (click)="onDocRemove(doc.offlineId, $event)"></div>
+                    <div class="doc-icon load-doc fas fa-file" (click)="onLoadOfflineDoc(doc.offlineId)"></div>
+                </div>
+                <div class="doc-info">
+                    <div>
+                        Title: {{doc.title}}
+                    </div>
+                    <div>
+                        Last Modified: {{doc.lastModifiedDate | date : "short"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doc-index"></div>
+</div>

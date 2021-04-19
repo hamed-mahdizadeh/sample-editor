@@ -1,0 +1,15 @@
+/* .navbar {
+    background-color: #aaa;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px auto;
+    height: 100%;
+} */
+
+.nav-icon {
+    cursor: pointer;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+}

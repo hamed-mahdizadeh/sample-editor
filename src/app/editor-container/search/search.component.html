@@ -1,0 +1,24 @@
+<div class="search-sidebar">
+    <div class="search-box">
+        <input type="search" name="search" id="search" [(ngModel)]="key" (input)="onSearchKeyInput()"
+            (keyup.enter)="onSearchClick()">
+        <div class="fas fa-search" (click)="onSearchClick()"></div>
+    </div>
+    <div class="search-report">
+        <div class="report-row">
+            <span>Match:</span>
+            <span class="match-no">{{report.matchedNo}}</span>
+        </div>
+        <div class="report-row">
+            <span>Similars:</span>
+            <div *ngFor="let item of report.similarDic | keyvalue" class="similar-item">
+                <span>
+                    {{item.key}}
+                </span>
+                <span class="item-number">
+                    x{{item.value}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

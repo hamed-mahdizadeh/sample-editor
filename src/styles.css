@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+mark.similar {
+    border-radius: 3px;
+    color: transparent;
+    background-color: #b8cadd;
+}
+
+mark.exact {
+    background-color: #ade7c5;
+}
+
+.app-header {
+    width: 100vr;
+    background-color: #555;
+    padding: 3px 3px 3px 10px;
+    color: #fff;
+}
+

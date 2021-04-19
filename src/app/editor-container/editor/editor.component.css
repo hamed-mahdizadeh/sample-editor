@@ -1,0 +1,60 @@
+textarea {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    border: 2px solid #74637f;
+    border-radius: 0;
+    color: #444;
+    background-color: transparent;
+    overflow: auto;
+    resize: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container,
+.backgroundArea,
+textarea {
+    width: 98%;
+    box-sizing: border-box;
+    height: 95vh;
+}
+
+.highlights,
+textarea {
+    padding: 10px;
+    font: 20px/28px "Open Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.highlights {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: transparent;
+}
+
+.backgroundArea {
+    position: absolute;
+    z-index: 1;
+    border: 2px solid #685972;
+    background-color: #fff;
+    overflow: auto;
+    pointer-events: none;
+    transition: transform 1s;
+}
+
+.editor-input-container {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.panel-header {
+    width: 100%;
+}
+

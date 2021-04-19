@@ -1,0 +1,11 @@
+<div class="editor-container" >
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="side-bar" [ngClass]="{'closed': activeSidebar !== 'search'}">
+    <app-search *ngIf="activeSidebar === 'search'"></app-search>
+  </div>
+  <div class="text-area-container">
+    <app-editor></app-editor>
+  </div>
+</div>
